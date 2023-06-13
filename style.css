@@ -1,0 +1,45 @@
+body{
+    color:white;
+    background-color:#4E3D42;
+    padding: 30px 100px 100px 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container{
+    display:flex;
+    height:40px;
+    width:640px;
+}
+
+.inside{
+    flex: 1 1 auto;
+    height: 40px;
+    width:40px;
+    max-width: 40px;
+}
+
+.grid{
+    background-color: white;
+    height:640px;
+    width:640px;
+}
+
+h1{
+    color: #C9D5B5;
+}
+
+.content{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    height:30px;
+}
+
+p{
+    margin-top:-10px;
+}
