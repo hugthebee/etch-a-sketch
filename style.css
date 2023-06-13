@@ -4,6 +4,7 @@ body{
     padding: 30px 100px 100px 100px;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .container{
@@ -20,6 +21,7 @@ body{
 }
 
 .grid{
+    flex: 0 1 auto;
     background-color: white;
     height:640px;
     width:640px;
@@ -30,6 +32,7 @@ h1{
 }
 
 .content{
+    flex: 1 2 auto;
     display:flex;
     flex-direction: column;
     justify-content: center;
