@@ -19,6 +19,16 @@ let choice;
 const butt = document.querySelector("button");
 const rain = document.querySelector(".rain");
 const col = document.querySelector(".col");
+const erase = document.querySelector(".erase");
+
+erase.addEventListener("click",function ()
+{
+    const ins = document.querySelectorAll(".inside");
+    ins.forEach(function (childdiv)
+    {
+        childdiv.addEventListener("mouseover", function () {
+        childdiv.style.backgroundColor="white";
+})})});
 
 rain.addEventListener("click", function(){
     const ins = document.querySelectorAll(".inside");
