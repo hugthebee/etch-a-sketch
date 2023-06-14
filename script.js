@@ -17,6 +17,20 @@ for (let i = 0; i < 16; i++) {
 
 let choice;
 const butt = document.querySelector("button");
+const rain = document.querySelector(".rain");
+
+rain.addEventListener("click", function(){
+    const ins = document.querySelectorAll(".inside");
+    ins.forEach(function (childdiv)
+    {
+        childdiv.addEventListener("mouseover", function () {
+        r1 = Math.floor(Math.random()*255);
+        r2 = Math.floor(Math.random()*255);
+        r3 = Math.floor(Math.random()*255);
+        childdiv.style.backgroundColor=`rgb(${r1},${r2},${r3})`;
+})})});
+
+
 butt.addEventListener("click", function () {
     choice = +(prompt("Enter the size of one side of the grid: "));
     if(choice>100)
