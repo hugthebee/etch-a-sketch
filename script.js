@@ -52,14 +52,14 @@ col.addEventListener("click", function(){
 
 butt.addEventListener("click", function () {
     choice = +(prompt("Enter the size of one side of the grid: "));
-    if(choice>100)
+    while(choice>100)
     {
         alert("The maximum size of the grid is 100!");
         choice = +(prompt("Enter the size of one side of the grid: "));
     }
-    else if(choice === NULL)
+    while(choice<=0)
     {
-        alert("Please enter a valid size");
+        alert("Please use an appropriate size");
         choice = +(prompt("Enter the size of one side of the grid: "));
     }
     
