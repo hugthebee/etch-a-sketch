@@ -18,6 +18,7 @@ for (let i = 0; i < 16; i++) {
 let choice;
 const butt = document.querySelector("button");
 const rain = document.querySelector(".rain");
+const col = document.querySelector(".col");
 
 rain.addEventListener("click", function(){
     const ins = document.querySelectorAll(".inside");
@@ -28,6 +29,14 @@ rain.addEventListener("click", function(){
         r2 = Math.floor(Math.random()*255);
         r3 = Math.floor(Math.random()*255);
         childdiv.style.backgroundColor=`rgb(${r1},${r2},${r3})`;
+})})});
+
+col.addEventListener("click", function(){
+    const ins = document.querySelectorAll(".inside");
+    ins.forEach(function (childdiv)
+    {
+        childdiv.addEventListener("mouseover", function () {
+        childdiv.style.backgroundColor=`#C9D5B5`;
 })})});
 
 
