@@ -57,6 +57,11 @@ butt.addEventListener("click", function () {
         alert("The maximum size of the grid is 100!");
         choice = +(prompt("Enter the size of one side of the grid: "));
     }
+    else if(choice === NULL)
+    {
+        alert("Please enter a valid size");
+        choice = +(prompt("Enter the size of one side of the grid: "));
+    }
     
     for (let i = 0; i < size; i++) {
         const newdiv = document.querySelector(".container");
